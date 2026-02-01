@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Dashboard</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>🌤️ Weather Dashboard</h1>
+
+    <form id="form">
+      <input
+        type="text"
+        id="city"
+        placeholder="Digite uma cidade"
+        required
+      />
+      <button type="submit">Buscar</button>
+    </form>
+  </header>
+
+  <main class="dashboard">
+    <section class="cards">
+      <div class="card">
+        <h3>🌡️ Temperatura</h3>
+        <p id="temp">-- °C</p>
+      </div>
+
+      <div class="card">
+        <h3>💧 Umidade</h3>
+        <p id="humidity">-- %</p>
+      </div>
+
+      <div class="card">
+        <h3>🌬️ Vento</h3>
+        <p id="wind">-- km/h</p>
+      </div>
+    </section>
+
+    <section class="status">
+  <img id="icon" src="" alt="icon" />
+  <h2 id="description">Digite uma cidade para ver o clima</h2>
+</section>
+
+
+    <section class="forecast" id="forecast"></section>
+
+    <section class="chart">
+      <div id="chart"></div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
